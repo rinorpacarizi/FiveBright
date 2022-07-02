@@ -82,6 +82,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border: 0;
     outline: 0;
 }
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 
 #nav-checkbox, .nav-toggle{
  display: none;
@@ -202,6 +211,12 @@ header{
     color: #fff !important;
 }
 
+/* Slider */
+.services {
+    margin-top: -180px;
+    position: absolute;
+    width: 100%;
+}
 .section1 .item{
     background-image: url(../images/service-item-bg.jpg);
     background-repeat: no-repeat;
@@ -215,6 +230,10 @@ header{
     height: 300px;
     margin: 20px;
     cursor: pointer;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
    
 }
 
@@ -225,7 +244,23 @@ header{
 .row1{
     display: flex;
    justify-content: center;
-
+   --bs-gutter-x: 1.5rem;
+   --bs-gutter-y: 0;
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: calc(-1 * var(--bs-gutter-y));
+   margin-right: calc(-.9 * var(--bs-gutter-x));
+   margin-left: calc(-.9 * var(--bs-gutter-x));
+}
+.section1 .item h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.section1 .item p {
+    color: #fff;
+    font-size: 19px;
 }
 
 /* upcoming meetings */
@@ -590,6 +625,69 @@ element.style {
 .accordion-body > .content {
     padding: 20px;
     padding-top: 0;
+}
+/* Facts Section */
+section.our-facts {
+    background-image: url(../images/facts-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 140px 0px 125px 0px;
+}
+section.our-facts h2 {
+    font-size: 38px;
+    color: #fff;
+    line-height: 50px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 50px;
+}
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+.count-area-content {
+    text-align: center;
+    background-color: rgba(250,250,250,0.15);
+    border-radius: 20px;
+    padding: 25px 30px 35px 30px;
+    margin: 15px 0px;
+}
+.count-digit {
+    margin: 5px 0px;
+    color: #f5a425;
+    font-weight: 700;
+    font-size: 36px;
+}
+.count-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+.new-students {
+    margin-top: 45px;
+}
+.align-self-center {
+    align-self: center!important;
+}
+section.our-facts .video {
+    text-align: center;
+    margin-left: 70px;
+    background-image: url(../images/video-item-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 20px;
+}
+section.our-facts .video img {
+    padding: 170px 0px;
+    max-width: 56px;
+}
+img {
+    width: 100%;
+    overflow: hidden;
 }
 
 

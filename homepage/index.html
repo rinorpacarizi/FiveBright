@@ -4,7 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- using swiper for sliders -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="../assests/css/style.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
@@ -20,7 +24,7 @@
             </label>
         </div>
         <ul class="nav-menu">
-           <li> <a href="#">Home</a></li>
+           <li> <a href="../homepage/index.html">Home</a></li>
            <li> <a href="../aboutUs/about.html">About Us</a> </li>
            <li> <a href="#">Courses</a></li>
            <li> <a href="#">Apply Now</a></li>
@@ -40,9 +44,9 @@
     </div>
 </div>
 
-<section class="services">
-    <div class="section1">
-        <div class="row1">
+<section class="swiper mySwiper services">
+    <div class=" swiper-wrapper section1">
+        <div class="swiper-slide row1">
             <div class="item">
                 <img src="../assests/images/service-icon-01.png">
                 <h2>Best Teachers</h2>
@@ -58,9 +62,36 @@
                 <h2>Best Teachers</h2>
                 <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p>
             </div>
+            
         </div>
     </div>
+    <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
 </section>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
 <section class="upcoming-meetings" id="meetings">
     <div class="container">
       <div class="row">
@@ -242,6 +273,59 @@
                 </div>
             </article>
         </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="our-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-lg-12">
+              <h2>A Few Facts About Our University</h2>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="count-area-content percentage">
+                    <div class="count-digit">94</div>
+                    <div class="count-title">Succesed Students</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit">126</div>
+                    <div class="count-title">Current Teachers</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="count-area-content new-students">
+                    <div class="count-digit">2345</div>
+                    <div class="count-title">New Students</div>
+                  </div>
+                </div> 
+                <div class="col-12">
+                  <div class="count-area-content">
+                    <div class="count-digit">32</div>
+                    <div class="count-title">Awards</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-6 align-self-center">
+          <div class="video">
+            <a href="https://www.youtube.com/watch?v=HndV87XpkWg" target="_blank"><img src="../assests/images/play-icon.png" alt=""></a>
+          </div>
         </div>
       </div>
     </div>

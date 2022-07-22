@@ -52,7 +52,9 @@ body{
 
 .col-lg-9{
     flex:0 0 auto;
-    width:75%}
+    width:75%;
+    margin-top: -12px;
+  }
 .col-lg-12{
     flex:0 0 auto;
     width:100%}
@@ -71,33 +73,6 @@ body{
   background-color: white;
   }
 
-  .logo{
-    font-size: 28px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    float: left;
-    padding-right: 140px;
-    padding-left: 40px;
-    transition: all 0.3s ease 0s;
-  }
-
-  .scroll-to-section{
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: 40px;
-    display: block;
-    font-weight: 500;
-    font-size: 14px;
-    color: black;
-    text-transform: uppercase;
-    transition: all 0.3s ease 0s;
-    height: 40px;
-    line-height: 40px;
-    border: transparent;
-    letter-spacing: 1px;
-
-  }
   a{
     text-decoration: none;
     color: black;
@@ -153,7 +128,7 @@ body{
     font-family: 'Poppins', sans-serif;
   }
   
-  .contact-us .container {
+  .contact-us .containerr {
         width: 100%;
         padding-right: var(--bs-gutter-x,.75rem);
         padding-left: var(--bs-gutter-x,.75rem);
@@ -215,7 +190,7 @@ body{
   
   .contact-us .right-info ul li h6 {
     color: #fff;
-    font-size: 15px;
+    font-size: 11px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 10px;
@@ -223,7 +198,7 @@ body{
   
   .contact-us .right-info ul li span {
     display: block;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-weight: 700;

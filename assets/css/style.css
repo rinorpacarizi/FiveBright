@@ -204,7 +204,11 @@ header{
 }
 
 .nav-menu li a:hover{
+<<<<<<< Updated upstream:assets/css/style.css
     color: #e5700a;
+=======
+    color: #a12c2f; 
+>>>>>>> Stashed changes:assests/css/style.css
 }
 
 .active{

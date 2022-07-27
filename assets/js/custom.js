@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 (function ($) {
 	
 	"use strict";
@@ -317,7 +316,7 @@
 
 
 })(window.jQuery);
-=======
+
 const header = document.querySelector("header");
 const sectionOne = document.querySelector(".change-name");
 
@@ -340,4 +339,4 @@ const sectionOneObserver = new IntersectionObserver(function(
 sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
->>>>>>> Stashed changes
+

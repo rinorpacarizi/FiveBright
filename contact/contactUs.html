@@ -1,150 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<head>
 
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
-      rel="stylesheet"
-    />
     <title>Contact Us</title>
 
-    <link href="../assets/css/contact.css" rel="stylesheet" />
-    <!--<link rel="stylesheet" href="../assets/css/style.css" /> -->
+    <link href="../assets/css/contact.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
-    <!-- <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="/assets/css/contact.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-  </head>
-  <body>
-    <header class="header-area">
-      <div class="logo">
-        <h2 style="color: black">FiveBright</h2>
-      </div>
-      <ul class="nav-menu">
-        <li class="weight">
-          <a href="../homepage/index.html">Home</a>
-        </li>
-        <li class="weight">
-          <a href="../aboutUs/about.html">About Us</a>
-        </li>
-        <li class="weight">
-          <a href="../courses/course.html">Courses</a>
-        </li>
-        <li class="weight">
-          <a href="../apply/apply.html">Apply Now</a>
-        </li>
-        <li class="weight">
-          <a href="../contact/contactUs.html">Contact Us</a>
-        </li>
-      </ul>
-    </header>
-    <div class="containerr contact-us">
-      <div class="row">
-        <div class="col-lg-9 align-self-center">
-          <div class="row1">
-            <div class="col-lg-12">
-              <form id="contact" action="" method="post">
-                <div class="row2">
-                  <div class="col-lg-12">
-                    <h2>Let's get in touch</h2>
-                  </div>
-                  <div class="col-lg-4">
-                    <fieldset>
-                      <input
-                        name="name"
-                        type="text"
-                        id="name"
-                        placeholder="YOURNAME...*"
-                        required=""
-                      />
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-4">
-                    <fieldset>
-                      <input
-                        name="email"
-                        type="text"
-                        id="email"
-                        pattern="[^ @]*@[^ @]*"
-                        placeholder="YOUR EMAIL..."
-                        required=""
-                      />
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-4">
-                    <fieldset>
-                      <input
-                        name="subject"
-                        type="text"
-                        id="subject"
-                        placeholder="SUBJECT...*"
-                        required=""
-                      />
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <textarea
-                        name="message"
-                        type="text"
-                        class="form-control"
-                        id="message"
-                        placeholder="YOUR MESSAGE..."
-                        required=""
-                      ></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="button">
-                        SEND MESSAGE NOW
-                      </button>
-                    </fieldset>
+</head>
+<body style="margin: 0px;">
+  <header class="header-area">
+    <div class="logo">
+      <h2>FiveBright</h2>
+    </div>
+    <ul class="nav-menu">
+      <li class="weight"><a href="../homepage/index.html">Home</a></li>
+      <li class="weight"><a href="../aboutUs/about.html">About Us</a></li>
+      <li class="weight"><a href="../courses/course.html">Courses</a></li>
+      <li class="weight"><a href="../apply/apply.html">Apply Now</a></li>
+      <li class="weight">
+        <a href="../contact/contactUs.html">Contact Us</a>
+      </li>
+    </ul>
+  </header>
+            <div class="container contact-us">
+              <div class="row">
+                <div class="col-lg-9 align-self-center">
+                  <div class="row1">
+                    <div class="col-lg-12">
+                      <form id="contact" action="" method="post">
+                        <div class="row2">
+                          <div class="col-lg-12">
+                            <h2>Let's get in touch</h2>
+                          </div>
+                          <div class="col-lg-4">
+                            <fieldset>
+                              <input name="name" type="text" id="name" placeholder="Username..." required="">
+                            </fieldset>
+                          </div>
+                          <div class="col-lg-4">
+                            <fieldset>
+                            <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email..." required="">
+                          </fieldset>
+                          </div>
+                          <div class="col-lg-4">
+                            <fieldset>
+                              <input name="subject" type="text" id="subject" placeholder="SUBJECT..." required="">
+                            </fieldset>
+                          </div>
+                          <div class="col-lg-12">
+                            <fieldset>
+                              <textarea name="message" type="text" class="form-control" id="message" placeholder="YOUR MESSAGE..." required=""></textarea>
+                            </fieldset>
+                          </div>
+                          <div class="col-lg-12">
+                            <fieldset>
+                              <button type="submit" id="form-submit" class="button">SEND MESSAGE</button>
+                            </fieldset>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
-              </form>
+                <div class="col-lg-3">
+                  <div class="right-info">
+                    <ul>
+                      <li>
+                        <h6>Phone Number</h6>
+                        <span>010-020-0340</span>
+                      </li>
+                      <li>
+                        <h6>Email Address</h6>
+                        <span>info@fivebright.ks</span>
+                      </li>
+                      <li>
+                        <h6>Street Address</h6>
+                        <span>Pristina 12000</span>
+                      </li>
+                      <li>
+                        <h6>Website URL</h6>
+                        <span>www.fivebright.ks</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="right-info">
-            <ul class="ul1">
-              <li>
-                <h6>Phone Number</h6>
-                <span>010-020-0340</span>
-              </li>
-              <li>
-                <h6>Email Address</h6>
-                <span>info@meeting.edu</span>
-              </li>
-              <li>
-                <h6>Street Address</h6>
-                <span>Rio de Janeiro - RJ, 22795-008, Brazil</span>
-              </li>
-              <li>
-                <h6>Website URL</h6>
-                <span>www.meeting.edu</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+            <footer class="footer">
+              <div class="containerr">
+                <div class="row">
+                  <div class="footer-col">
+                    <h4>University</h4>
+                    <ul>
+                      <li><a href="#">about us</a></li>
+                      <li><a href="#">our services</a></li>
+                      <li><a href="#">privacy policy</a></li>
+                      <li><a href="#">affiliate program</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-col">
+                    <h4>courses</h4>
+                    <ul>
+                      <li><a href="#">computer science</a></li>
+                      <li><a href="#">programing</a></li>
+                      <li><a href="#">web dev</a></li>
+                      <li><a href="#">software engineer</a></li>
+                      <li><a href="#">FAQ</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-col">
+                    <h4>contacts</h4>
+                    <ul>
+                      <li><a href="#">contact us</a></li>
+                      <li><a href="#">num : 049 785 278</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <br>
+                    <div class="col-lg-6">
+                      <a href="#top" style="color: #fff;" class="scroll-to-top">
+                          Go to Top
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z"/>
+                          </svg>
+                      </a>
+                  </div>
+                  </div>
+                </div>
+              
+              </div>
+              </div>
+            </footer>
+</body>
 </html>
